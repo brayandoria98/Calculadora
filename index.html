@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora: MIUI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,500&display=swap" rel="preload" as="style"
+          onload="this.rel='stylesheet'">
+</head>
+<body>
+    <div class="titulo">Calculadora: MIUI</div>
+    
+    <div class="calculadora-grid">
+        <div class="calculadora">
+            <div>
+                <input type="text" id="result" placeholder="0">
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora-3" onclick="resetearCal()">AC</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('root\(')">√</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('pow\(')">^</button>
+                <div class="dot-comma">
+                    <button class="bot-calculadora-4" onclick="numerosCal('/')">/</button>
+                    <button class="bot-calculadora-4" onclick="numerosCal('%')">%</button>
+                </div>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal(7)">7</button>
+                <button class="bot-calculadora" onclick="numerosCal(8)">8</button>
+                <button class="bot-calculadora" onclick="numerosCal(9)">9</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('*')">x</button>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal(4)">4</button>
+                <button class="bot-calculadora" onclick="numerosCal(5)">5</button>
+                <button class="bot-calculadora" onclick="numerosCal(6)">6</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('-')">-</button>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal(1)">1</button>
+                <button class="bot-calculadora" onclick="numerosCal(2)">2</button>
+                <button class="bot-calculadora" onclick="numerosCal(3)">3</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('+')">+</button>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal(')')">)</button>
+                <button class="bot-calculadora" onclick="numerosCal(0)">0</button>
+                <div class="dot-comma">
+                    <button class="bot-calculadora-4" onclick="numerosCal(',')">,</button>
+                    <button class="bot-calculadora-4" onclick="numerosCal('.')">.</button>
+                </div>
+                <button class="bot-calculadora-2" onclick="operacionCal()">=</button>
+            </div>
+        </div>
+        <div class="tutorial-container">
+            <div class="tutorial">
+            ¿Cómo usar las secciones especiales de la calculadora? 
+            </div>
+            <div class="tutorial-body">
+            
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
