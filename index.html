@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora: MIUI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,500&display=swap" rel="preload" as="style"
+          onload="this.rel='stylesheet'">
+</head>
+<body>
+    <div class="titulo">Calculadora: MIUI</div>
+    
+    <div class="calculadora-grid">
+        <div class="calculadora">
+            <div>
+                <input type="text" id="result" placeholder="0">
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora-3" onclick="resetearCal()">AC</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('root\(')">√</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('pow\(')">^</button>
+                <div class="dot-comma">
+                    <button class="bot-calculadora-4" onclick="numerosCal('/')">/</button>
+                    <button class="bot-calculadora-4" onclick="numerosCal('%')">%</button>
+                </div>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal(7)">7</button>
+                <button class="bot-calculadora" onclick="numerosCal(8)">8</button>
+                <button class="bot-calculadora" onclick="numerosCal(9)">9</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('*')">x</button>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal(4)">4</button>
+                <button class="bot-calculadora" onclick="numerosCal(5)">5</button>
+                <button class="bot-calculadora" onclick="numerosCal(6)">6</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('-')">-</button>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal(1)">1</button>
+                <button class="bot-calculadora" onclick="numerosCal(2)">2</button>
+                <button class="bot-calculadora" onclick="numerosCal(3)">3</button>
+                <button class="bot-calculadora-3" onclick="numerosCal('+')">+</button>
+            </div>
+    
+            <div class="contenedor-num">
+                <button class="bot-calculadora" onclick="numerosCal('(')">(</button>
+                <button class="bot-calculadora" onclick="numerosCal(')')">)</button>
+                <button class="bot-calculadora" onclick="numerosCal(0)">0</button>
+                <div class="dot-comma">
+                    <button class="bot-calculadora-4" onclick="numerosCal(',')">,</button>
+                    <button class="bot-calculadora-4" onclick="numerosCal('.')">.</button>
+                </div>
+                <button class="bot-calculadora-2" onclick="operacionCal()">=</button>
+            </div>
+        </div>
+        <div class="tutorial-container">
+            <div class="tutorial-title">
+            ¿Cómo usar las secciones especiales de la calculadora? 
+            </div>
+            <div class="tutorial-body">
+                <div class="tutorial-body-1">
+                    1. Para encontrar la raíz de algún numero basta con presionar el ícono de raíz "√" y poner el
+                    número + "," + el tipo de raíz que quieres buscar (Raíz cuadrada, raíz cúbica, etc) + ")".
+                    Por ejemplo para hallar la raíz cuadrada de 25 sería root(25, 2) = 5. Para hallar la raíz
+                    cúbica sería root(125, 3) = 5. 
+                </div>
+                <div class="tutorial-body-2">
+                    2. Para la potenciación se hace algo similar, se presiona el símbolo "^", luego se pone de
+                    primero el número que queremos elevar a una potencia + "," + la potencia + ")". 
+                    Por ejemplo, queremos elevar 5 a la 2, sería pow(5,2) = 25. 
+                </div>
+                <div class="tutorial-body-3">
+                    3. El símbolo de "%" en este caso no significa porcentaje, significa "Resto" o "Remainder"
+                    en inglés, lo cuál es el residuo que queda en una división. Por ejemplo, 100%10 = 0 porque
+                    10*10 = 100, entonces no queda ningún residuo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
